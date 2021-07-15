@@ -1,4 +1,4 @@
-
+/* **********utilities******** */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 body{
@@ -6,16 +6,15 @@ body{
     margin: 0;
 }
 
-
+/*********** banner section Start ***************/
 
 .banner{
     width: 1440px;
     height: 677px;
     display: flex;
     background-color:#2D25A0;
-
-
 }
+
 .banner-heading{
     width: 485px;   
     height: 230px;
@@ -61,6 +60,10 @@ margin-left: 102px;
     transition: transform 2s ease-out;
 }
 
+/*********** banner section End ***************/
+
+
+/*********** Players section Start ***************/
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -110,6 +113,99 @@ p{
     line-height: 26px;
 }
 
+/*********** Players section end ***************/
+
+/*********** Article section Start ***************/
+
+.Transfer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px;
+    justify-content: space-around;
+    margin-left: 30px;
+    justify-content: center;
+    
+}
+.Player-transfer{
+
+width: 300px;
+height: 400px;
+margin:10px;   
+background-color:#3abbfd;
+
+    }
+
+.Player-transfer .Player-Image img{
+width: 300px;
+height: 150px;
+}
+.details h3{ 
+    color: #FFFFFF;
+    background-color:#2D25A0;;
+    font-size:18px;
+    padding-left: 2px;
+
+}
+
+.details p {
+    margin:4px;
+    text-align: left;
+
+}
+.container h2{
+    color: #FFFFFF;
+    background-color:#2D25A0;
+    text-align: center;
+}
+.bttn{
+    font-size: 13px;
+    color: white;
+    background-color:#2D25A0;
+    text-decoration: none;
+    padding:4px 15px;
+    text-decoration: none
+
+}
+/*********** Article section end ***************/
+
+/*************** Top winners section start*******/
+
+h2{
+    color:white;
+    background-color:#2D25A0;
+}
+
+.Ratings h3{
+    color:white;
+    background-color:#2D25A0;
+    text-align: center;
+}
+.winners{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.team{
+    background-color:#3abbfd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 260px;
+    width: 360px;
+}
+h4{
+    color: white;
+    text-align: center;
+}
+/*************** Top winners section end*******/
+
+/*************** Footer section start*******/
+
 .Bottom-part{
     width: 483.87px;
     height: 213px;
@@ -146,145 +242,4 @@ margin-left: 123.94px;
 margin-right: 123.94px;
 }
 
-
-/* Player */
-.Transfer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 200px;
-    justify-content: space-around;
-    margin-left: 30px;
-    justify-content: center;
-    
-}
-.Player-transfer{
-
-width: 300px;
-height: 400px;
-margin:10px;   
-background-color:hsla(180, 100%, 50%, 0.445)
-
-    }
-
-.Player-transfer .Player-Image img{
-width: 300px;
-height: 150px;
-}
-.details h3{ 
-    color: #FFFFFF;
-    background-color:#2D25A0;;
-    font-size:18px;
-    padding-left: 2px;
-
-}
-
-.details p {
-    margin:4px;
-    text-align: left;
-
-}
-.container h2{
-    color: #FFFFFF;
-    background-color:#2D25A0;
-    text-align: center;
-}
-.bttn{
-    font-size: 13px;
-    color: white;
-    background-color:#2D25A0;
-    text-decoration: none;
-    padding:4px 15px;
-    text-decoration: none
-
-}
-/* lastpart.................................
-................. */
-
-/* Player */
-.Transfers{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
-}
-
-.Player-Image img{
-    width: 224px;
-height: 104px;
-}
-.details p{
-
-    font-size:16px;
-
-}
-h2{
-    color:white;
-    background-color:#2D25A0;
-}
-.bttn{
-    font-size: 13px;
-    color: white;
-    background-color:#2D25A0;
-    text-decoration: none;
-    padding:4px 15px;
-    text-decoration: none
-
-}
-
-
-
-/* Media Queries */
-
-/* mobile devices */
-@media only screen and (max-width:688px){
-    .container{
-        width: 100%;
-    }
-    .Transfers{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-
-}
-
-/* tablet/ipad */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    .Transfers{
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    
-}
-@media only screen and (max-width:688px){
-    .banner {
-        width: 100%;
-        height: auto;
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: #2D25A0;
-        overflow: hidden;
-    }
-    .banner-heading{
-        margin-bottom: 2px;
-    }
-    h1{ width: auto;
-        font-size: 34px;
-        line-height: 40px;
-    }  
-    .banner-image img{
-        width: 100%;
-        height:auto;
-
-    }
-    
-.players{
-display: none;
-}  
-}
+/*************** Footer section end*******/
