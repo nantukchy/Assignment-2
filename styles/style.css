@@ -148,24 +148,45 @@ margin-right: 123.94px;
 
 
 /* Player */
-.Players{
+.Transfer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
+    grid-column-gap: 200px;
+    justify-content: space-around;
+    margin-left: 30px;
+    justify-content: center;
+    
+}
+.Player-transfer{
+
+width: 300px;
+height: 400px;
+margin:10px;   
+background-color:hsla(180, 100%, 50%, 0.445)
+
+    }
+
+.Player-transfer .Player-Image img{
+width: 300px;
+height: 150px;
+}
+.details h3{ 
+    color: #FFFFFF;
+    background-color:#2D25A0;;
+    font-size:18px;
+    padding-left: 2px;
+
 }
 
-.Player-Image img{
-    width: 224px;
-height: 104px;
-}
-.details p{
-
-    font-size:16px;
+.details p {
+    margin:4px;
+    text-align: left;
 
 }
-h2{
-    color:white;
+.container h2{
+    color: #FFFFFF;
     background-color:#2D25A0;
+    text-align: center;
 }
 .bttn{
     font-size: 13px;
@@ -180,7 +201,7 @@ h2{
 ................. */
 
 /* Player */
-.Players{
+.Transfers{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
@@ -218,7 +239,7 @@ h2{
     .container{
         width: 100%;
     }
-    .Players{
+    .Transfers{
         grid-template-columns: repeat(2, 1fr);
 
     }
@@ -231,7 +252,7 @@ h2{
     .container{
         width: 100%;
     }
-    .Players{
+    .Transfers{
         grid-template-columns: repeat(1, 1fr);
 
     }
