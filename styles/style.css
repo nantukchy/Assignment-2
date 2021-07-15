@@ -145,6 +145,99 @@ text-align: right;
 margin-left: 123.94px;
 margin-right: 123.94px;
 }
+
+
+/* Player */
+.Players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.Player-Image img{
+    width: 224px;
+height: 104px;
+}
+.details p{
+
+    font-size:16px;
+
+}
+h2{
+    color:white;
+    background-color:#2D25A0;
+}
+.bttn{
+    font-size: 13px;
+    color: white;
+    background-color:#2D25A0;
+    text-decoration: none;
+    padding:4px 15px;
+    text-decoration: none
+
+}
+/* lastpart.................................
+................. */
+
+/* Player */
+.Players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.Player-Image img{
+    width: 224px;
+height: 104px;
+}
+.details p{
+
+    font-size:16px;
+
+}
+h2{
+    color:white;
+    background-color:#2D25A0;
+}
+.bttn{
+    font-size: 13px;
+    color: white;
+    background-color:#2D25A0;
+    text-decoration: none;
+    padding:4px 15px;
+    text-decoration: none
+
+}
+
+
+
+/* Media Queries */
+
+/* mobile devices */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .Players{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+/* tablet/ipad */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .Players{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    
+}
 @media only screen and (max-width:688px){
     .banner {
         width: 100%;
